@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: coral;
+                background-color: #D6EEEE;
+}
+                    
+                    p{text-align: center;}
+                
+                   
+                    
+                    ul li {
+            display: inline;
+            width: 10em;
+           }    
+                    
+    </style>
 </head>
 <body>
     <h1>git status</h1>
@@ -11,7 +30,83 @@
     <h3>hellow</h3>
     <h1>colone change </h1>
     <h4>this is a moniruzzaman</h4>
-    <p>hellow this is moniruzzaman akash</p>
+    <h1>hellow this is moniruzzaman akash</h1>
+    <caption>Table Rowspan and colspan</caption>
+    <table style=" width:100%;height: 400px;">
+       <thead>
+
+        <tr>
+          <th colspan="3" style="width: 100%; height: 75px;">HEADER<br><ul>
+            <li>HOME</li>
+            <li>NOTICE</li>
+            <li>ITEM</li>
+            <li>ONLINE SERVICE</li>
+          </ul></th>
+
+        </tr>
+       </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" style="height: 75%;width: 40%;">Left Side</td>
+                <td>hi</td>
+                <td rowspan="4" style="height: 75%;width: 40%;">Right Side</td>
+
+            </tr>
+            <tr><td>hi</td></tr>
+            <tr><td>hi</td></tr>
+            <tr><td>hi</td></tr>
+        
+        </tbody>
+        <tbody><tr>
+            <th colspan="3" style="width: 100%">Footer</th>
+          </tr></tbody>
+        
+        <tr>
+          
+        </tr>
+        <tr>
+          
+            
+        </tr>
+      </table>
+
+     <br><br><br>
+
+      <table style=" width:100%;height: 400px;">
+        <thead>
+            <tr>
+                <td rowspan="2"><p>A</p></td>
+                <td><p>B</p></td>
+                <td rowspan="3"><p>D</p></td>
+                <td colspan="2"><p>E</p></td>
+                <td><p>F</p></td>
+            
+
+            </tr>
+
+            <tr>
+                <td><p>C</p></td>
+                <td rowspan="2"><p>G</p></td>
+                <td rowspan="2"><p>H</p></td>
+                <td rowspan="2"><p>I</p></td>
+                
+
+            </tr>
+            <tr>
+                <td colspan="2"><p>J</p></td>
+                
+                
+
+            </tr>
+            <tr>
+                <td colspan="3"><p>K</p></td>
+                <td><p>L</p></td>
+                <td colspan="2"><p>M</p></td>
+
+            </tr>
+        </thead>
+
+      </table>
 
     
 </body>
