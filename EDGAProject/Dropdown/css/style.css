@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.heading_item{
+  text-align: center;
+}
 
 li {
   list-style: none;
@@ -16,13 +19,51 @@ a {
   width: 1320px;
   margin: 0 auto;
 }
+body {
+  font-family: "Inter", sans-serif;
+}
 
+.btn {
+  border-radius: 10px;
+  background-color: #5956e8;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding: 13px 19px;
+}
+.para {
+  font-size: 16;
+  font-weight: 400;
+  color: rgba(24, 24, 24, 0.7);
+  line-height: 27px;
+  text-align: center;
+}
+
+.box_para {
+  width: 542px;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heading {
+  color: #181818;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.heading_item {
+  color: #181818;
+  font-size: 25px;
+  font-weight: 700;
+}
 /* ..............
 Navbar css start        
 ................. */
 #navbar {
   padding: 20px 0;
-  background-color: goldenrod;
+  background-color: green;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,33 +89,19 @@ Navbar css start
 #navbar .main .menu ul li a {
   font-size: 18px;
   font-weight: 600;
-  color: wheat;
   position: relative;
-}
-
-#navbar .main .menu ul li a::before {
-  content: "";
-  height: 2px;
-  width: 0;
-  background-color: blueviolet;
-  position: absolute;
-  top: -19px;
-  left: 0;
-  transition: 0.4s;
-}
-
-#navbar .main .menu ul li a:hover:before {
-  width: 100%;
+  color:white;
 }
 
 #navbar .main .menu .dropdown {
   display: block;
   position: absolute;
   width: 200px;
-  background-color: brown;
-  top: 40px;
-  /* opacity: 0;
-  visibility: hidden; */
+  background-color:aliceblue;
+  color:black;
+  top: 50px;
+  right:30px;
+  border-radius:5px;
   transition: 0.4s;
   transition-delay: 0.2s;
   transform: scaleY(0);
@@ -86,12 +113,119 @@ Navbar css start
   margin-bottom: 10px;
 }
 
-#navbar .main .menu .dropdown a:hover:before {
-  width: 0;
-}
-#navbar .main .menu li:hover .dropdown {
+
+#navbar .main .menu :hover .dropdown {
   /* opacity: 1;
   visibility: visible; */
   transform: scaleY(1);
   transition: transform 0.2s ease;
+
+
+}
+#navbar .logo a{
+  color:white;
+}
+
+#navbar .main .menu .dropdown li a{
+  color:black;
+}
+
+/* navbar css end */
+
+/* product css start */
+#services {
+  padding: 100px 0;
+}
+
+#services .top_heading p {
+  width: 542px;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+#services .main .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#services .main .items .item {
+  width: 32%;
+  height: 385px;
+  border-radius: 10px;
+  border: 0.5px solid #e3e3e3;
+  background: #fff;
+  padding: 63px 48px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#services .main .items .item i {
+  padding: 17px;
+  
+ 
+}
+
+#services .main .items .item h3 {
+  margin: 20px 0;
+}
+
+#services .main .items .item:hover {
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+/* product css end */
+/* product css start */
+#servicess {
+  padding: 100px 0;
+  background-color: #e3e3e3;
+}
+
+#servicess .top_heading p {
+  width: 542px;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+#servicess .main .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#servicess .main .items .item {
+  width: 32%;
+  height: 385px;
+  border-radius: 10px;
+  border: 0.5px solid #e3e3e3;
+  background: #fff;
+  padding: 63px 48px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/*service Start */
+
+#servicess .main .items .item i {
+  padding: 17px;
+  
+ 
+}
+
+#servicess .main .items .item h3 {
+  margin: 20px 0;
+}
+
+#servicess .main .items .item:hover {
+  background-color: #5956e8;
+}
+
+
+/* product css end */
+
+.from{
+   text-align: center;
 }
